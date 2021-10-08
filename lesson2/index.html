@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Магазин</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <form name="" action="" id="form">
+      <fieldset>
+        <div class="row">
+          <p>Выберете размер бургера</p>
+          <div class="radio-variant">
+            <input type="radio" name="size" id="small" value="small" checked />
+            <label for="small">Маленький(50р, 20ккал)</label>
+          </div>
+          <div class="radio-variant">
+            <input type="radio" name="size" id="large" value="large" />
+            <label for="large">Большой(100р, 40ккал)</label>
+          </div>
+        </div>
+        <div class="row additions">
+          <p>Дополнтельно к бургеру</p>
+          <div class="checkbox-variant">
+            <input type="checkbox" name="add" id="cheese" value="cheese" />
+            <label for="cheese">Сыр(+10р, +20ккал)</label>
+          </div>
+          <div class="checkbox-variant">
+            <input type="checkbox" name="add" id="salad" value="salad" />
+            <label for="salad">Салат(+20р, +5ккал)</label>
+          </div>
+          <div class="checkbox-variant">
+            <input type="checkbox" name="add" id="potato" value="potato" />
+            <label for="potato">Картофель(+15р, +10ккал)</label>
+          </div>
+          <div class="checkbox-variant">
+            <input type="checkbox" name="add" id="onion" value="onion" />
+            <label for="onion">Приправа(+15р, 0ккал)</label>
+          </div>
+          <div class="checkbox-variant">
+            <input type="checkbox" name="add" id="ketchup" value="ketchup" />
+            <label for="ketchup">Майонер(+20р, +5ккал)</label>
+          </div>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Подсчитать" />
+        </div>
+      </fieldset>
+      <div id="result">
+        <div><b>Стоимость:</b> <span id="price">0</span> рублей</div>
+        <div><b>Калорийность:</b> <span id="calories">0</span> ккал</div>
+      </div>
+    </form>
+  </body>
+</html>
